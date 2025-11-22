@@ -1105,9 +1105,7 @@ open class ZLEditImageViewController: UIViewController {
         var editModel: ZLEditImageModel?
         
         func callback() {
-            dismiss(animated: animateDismiss) {
-                self.editFinishBlock?(resImage, editModel)
-            }
+            self.editFinishBlock?(resImage, editModel)
         }
         
         guard hasEdit else {
